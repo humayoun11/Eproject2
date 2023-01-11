@@ -70,6 +70,7 @@ border-bottom: 1px solid black;
   font-size: 22px;
   padding: 10px;
   margin-right: 12px;
+  color: brown;
   }
 
 .heading{
@@ -82,16 +83,25 @@ border-bottom: 1px solid black;
     content: "";
     position: absolute;
     height: 2px;
-    width: 155px;
+    width: 140px;
     bottom: -8px;
-    left: 20px;
+    left: 15px;
     background: brown;
 }
-
+.fa-solid{
+    margin: 5px;
+}
+.fa-solid{
+    color: green;
+}
+.fa-solid:hover{
+    color: brown;
+}
 .productsection img{
     width: 400px;
     height: 350px;
     border-radius: 3px;
+    border: 1px solid greenyellow;
 }
 
 .productsection{
