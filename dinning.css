@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +13,65 @@ body{
 .fa-solid{
     margin: 5px;
 }
+.nav-1 ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    text-align: end;
+}
+.nav-1 ul li{
+    list-style: none;
+    margin: 12px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.nav-1 ul li:hover{
+transition: 0.2s ease-in;
+font-weight: 500;
+border-bottom: 1px solid black;
+}
+.logo img{
+    width: 150px;
+    height: 80px;
+    position: relative;
+    top: -40px;
+    margin-left: 20px;
+    }
+.nav-2{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50px;
+}
+.navlinks ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.navlinks ul li{
+    list-style: none;
+    margin: 8px;
+    color: black;
+    font-family: poppins;
+}
+.navlinks ul li a{
+    text-decoration: none;
+    color: black;
+}
+.navlinks ul li a:hover{
+    transition: 0.3s ease-in;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+ 
+  .fa-regular{
+  font-size: 22px;
+  padding: 10px;
+  margin-right: 12px;
+  }
+
 .heading{
     margin-left: 550px;
     font-weight: bolder;
@@ -55,4 +117,52 @@ body{
     margin-bottom: 10px;
     font-weight: 600;
     margin-right: 50px;
+}
+/*-----------------------footer------------------*/
+.footer2{
+    display: flex;
+    color: black;
+    justify-content: space-evenly;
+    background-color: rgb(212, 207, 207);
+}
+.footer2 ul li{
+    list-style: none;
+    line-height: 40px;
+    font-size: 15px !important;
+}
+.footer2 ul li:hover{
+cursor: pointer;
+font-weight: 700;
+text-decoration: underline;
+font-size: 15px !important;
+
+}
+.footer2 ul h3{
+    font-family: raleway;
+    font-size: 22px;
+    margin-top: 30px;
+    font-weight: 650;
+}
+.footer2 ul h4{
+    font-family: raleway;
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: 650;
+}
+.footer2 ul img{
+    height: 70px;
+    width: 90px;
+    cursor: pointer;
+}
+.footer2 ul h5{
+    font-family: raleway;
+    font-size: 22px;
+    margin-top: 30px;
+    font-weight: 650;
+}
+.fa-brands{
+    font-size: 25px;
+    color: rgb(102, 102, 218);
+    cursor: pointer;
+    margin-top: 35px;
 }
