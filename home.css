@@ -161,8 +161,11 @@ border-bottom: 1px solid black;
   font-size: 22px;
   padding: 10px;
   margin-right: 12px;
+  color: brown;
   }
-
+.fa-sharp{
+    color: brown;
+}
 /*------------------shop by category-----------------*/
 .shop-by-ctgry h1{
     font-family: raleway;
@@ -198,8 +201,22 @@ border-bottom: 1px solid black;
     width: 300px;
     height: 300px;
 }
+.new-arrival-imgs button{
+    margin-left: 20px;
+    width: 150px;
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+.new-arrival-imgs button:hover{
+    background-color: orangered;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    border: none;
+}
 .new-arrival-imgs:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.3s ease-in;
 }
 .new-arrival-imgs h4{
@@ -334,7 +351,7 @@ font-size: 15px;
     transition: 0.3s ease-in;
 }
 .navlinks a i{
-    color: black;
+    color: brown;
 }
 /*-----------------------footer------------------*/
 .footer2{
