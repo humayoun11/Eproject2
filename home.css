@@ -204,6 +204,10 @@ border-bottom: 1px solid black;
 }
 .new-arrival-imgs h4{
     font-family: poppins;
+    font-size: 18px;
+}
+.new-arrival-imgs h5{
+font-size: 15px;
 }
 .discover-more{
     justify-content: center;
@@ -328,6 +332,9 @@ border-bottom: 1px solid black;
 .read-more-btn button:hover{ 
     background-color: white;
     transition: 0.3s ease-in;
+}
+.navlinks a i{
+    color: black;
 }
 /*-----------------------footer------------------*/
 .footer2{
