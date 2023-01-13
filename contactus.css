@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Roboto+Serif:ital,opsz,wght@1,8..144,300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -62,4 +63,120 @@ border-bottom: 1px solid black;
   font-size: 22px;
   padding: 10px;
   margin-right: 12px;
+  }
+  .contactusemail{
+    text-align: center
+  }
+
+  .h2 {
+    font-size: x-large !important ;
+    color: #636466 !important;
+  }
+  .contactbutton{
+    border-radius: 5px !important;
+    width: 100px;
+    height: 30px;
+    background-color: #c3c83f;
+    color: white;
+    border: none;
+    font-family: 'Lexend', sans-serif;
+    font-family: 'Roboto Serif', serif;
+  }
+  hr{
+    background-color: red;
+  }
+  .visitus{
+    text-align: center;
+  }
+  .mapaddress{
+    display: flex;
+    height: 460px;
+    width: 1000px;
+    margin-left: 250px;
+    justify-content: space-evenly;
+  }
+
+  .otherlocations{
+    justify-content: space-between;
+    display: flex;
+    margin-top: 5px;
+    height: 275px;
+    width: 100%;
+  }
+  .location{
+    text-align: center;
+    height: 225px;
+    width: 450px;
+    margin: 25px !important;
+  }
+  .logoimg{
+    height: 30px !important;
+    width: 50px !important;
+  }
+  .contactformbutton{
+    height: 30px;
+    width: 75px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c6c03d;
+  }
+.contactform {
+    display: none ; /* Hidden by default */
+    position: fixed !important; /* Stay in place */
+    z-index: 1 !important; /* Sit on top */
+    padding-top: 100px !important; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100% !important; /* Full width */
+    height: 100% !important; /* Full height */
+    overflow: auto !important; /* Enable scroll if needed */
+    background-color: rgb(0,0,0) !important; /* Fallback color */
+    background-color: rgba(0,0,0,0.4) !important; /* Black w/ opacity */
+    text-align: center !important;
+    align-items: center;
+  }
+  
+  .contactform-content {
+    background-color: #fefefe !important;
+    border-radius: 5px;
+    margin: auto !important;
+    padding: 20px !important;
+    border: 1px solid #888 !important;
+    width: 30% !important;
+  }
+  .contactsubmit{
+    display: none ; /* Hidden by default */
+    position: fixed !important; /* Stay in place */
+    z-index: 1 !important; /* Sit on top */
+    padding-top: 100px !important; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100% !important; /* Full width */
+    height: 100% !important; /* Full height */
+    overflow: auto !important; /* Enable scroll if needed */
+    background-color: rgb(0,0,0) !important; /* Fallback color */
+    background-color: rgba(0,0,0,0.4) !important; /* Black w/ opacity */
+    text-align: center !important;
+    align-items: center;
+  }
+  .contactsubmit-content{
+    background-color: #fefefe !important;
+    border-radius: 5px;
+    margin: auto !important;
+    padding: 20px !important;
+    border: 1px solid #888 !important;
+    width: 30% !important;
+  }
+  
+  
+
+  .widt{
+    width: 300px !important;
+    margin-left: 15px !important;
+    border-radius: 5px;
+    border-color: #797973 !important;
+  }
+
+  .label{
+    color: red;
   }
