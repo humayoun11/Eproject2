@@ -104,6 +104,20 @@ border-bottom: 1px solid black;
     border: 1px solid greenyellow;
 }
 
+#product button{
+    margin-left: 10px;
+    width: 150px;
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+#product button:hover{
+    background-color: orangered;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    border: none;
+}
 .productsection{
     display: flex;
     flex-wrap: wrap;
