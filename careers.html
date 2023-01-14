@@ -68,8 +68,8 @@
       <p>10-12 years of experince in sales with broad exposure in energy Sector</p>
     </div>
     <div class="apply-now">
-      <a href="#">
-        <button>Apply now</button>
+      <a href="#applysection">
+        <button>  Apply now</button>
       </a>
     </div>
     <br>
@@ -82,7 +82,7 @@
       <p>2-4 years’s quality experience in a large-scale EPC organization</p>
     </div>
     <div class="apply-now">
-      <a href="#">
+      <a href="#applysection">
         <button>Apply now</button>
       </a>
     </div>
@@ -96,7 +96,7 @@
       <p>At least 3-4 years of sales experience of landscape Irrigation System</p>
     </div>
     <div class="apply-now">
-      <a href="#">
+      <a href="#applysection">
         <button>Apply now</button>
       </a>
     </div>
@@ -110,7 +110,7 @@
       <p>Minimum 1-2 years with exposure to HEIS Industry</p>
     </div>
     <div class="apply-now">
-      <a href="#">
+      <a href="#applysection">
         <button>Apply now</button>
       </a>
     </div>
@@ -124,7 +124,7 @@
       <p>10-12 years of experince in sales with broad exposure in energy Sector</p>
     </div>
     <div class="apply-now">
-      <a href="#">
+      <a href="#applysection">
         <button>Apply now</button>
       </a>
     </div>
@@ -138,16 +138,17 @@
       <p>10-12 years of experince in sales with broad exposure in energy Sector</p>
     </div>
     <div class="apply-now">
-      <a href="#">
-        <button>Apply now</button>
+      <a href="#applysection">
+        <button onclick="submit()">Apply now</button>
       </a>
     </div>
-    <br>
+    
+
+  <br>
     <h2><span>Apply Online</span></h2>
     <br>
     <!--------------------------------form-------------------------------------->
-
-    <h3 class="personal-info-h3">Personal Data/Information</h3>
+  <h3 id="applysection" class="personal-info-h3">Personal Data/Information</h3>
     <br>
     <form>
     <div class="form-info">
@@ -160,7 +161,7 @@
       <div class="personal-info">
         <label>Name of Candidate *</label>
         <br>
-        <input type="text" placeholder="Please write your full name here">
+        <input type="text" placeholder="Please write your full name here" id="applyname">
       </div>
     
       <div class="personal-info">
@@ -178,13 +179,13 @@
       <div class="personal-info">
         <label>Email</label>
         <br>
-        <input type="email" placeholder="e.g. abc@gmail.com">
+        <input type="email" placeholder="e.g. abc@gmail.com" id="applyemail">
       </div>
      
       <div class="personal-info">
         <label>Contact Number</label>
         <br>
-        <input type="number" placeholder="Enter your contact No here">
+        <input type="number" placeholder="Enter your contact No here" id="applynumber">
       </div>
       <!--div class="personal-info">
         <select name="Gender" Gender>
@@ -263,11 +264,16 @@
   <br>
   <input type="text">
 </div>
+    
 <br>
-<div class="submit-btn">
-  <button>Submit</button>
-</div>
+
+
+
+
     </form>
+    <div class="submit-btn">
+      <button onclick="submit()">Submit</button>
+    </div>
     <br>
     <div class="footer2">
       <ul>
@@ -318,6 +324,32 @@
   </div>
      </main>
 
+     <!-- The user box -->
+     <div id="submitbox" class="submitbox">
+        <div class="submitbox-content">
+    
+    <h6>Name</h6>
+    <br>
+    <h6 id="showuser"></h6>
+    <br>
+    <h6>Email</h6>
+    <br>
+    <h6 id="showemail"></h6>
+    <br>
+    <h6>Number</h6>
+    <br>
+    <h6 id="shownumber"></h6>
+    <br>
+    <br>
+    <h6>we received your information wait until if we have this type of job then we contact you </h6>
+    <div class="submit-btn">
+      <button onclick="goodbye()">Good Bye</button>
+    </div>
+    
+
+  </div>
+
+</div>
    
 
 
@@ -329,5 +361,38 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Get the modal
+var submitbox = document.getElementById("submitbox");
+var applyname = document.getElementById('')
+var applyemail = document.getElementById('')
+var applynumber = document.getElementById('')
+
+function submit() {
+  
+  var applyname = document.getElementById('applyname').value
+  var applyemail = document.getElementById('applyemail').value
+  var applynumber = document.getElementById('applynumber').value
+
+  localStorage.setItem('applyname', applyname);
+  localStorage.setItem('applyemail', applyemail);
+  localStorage.setItem('applynumber', applynumber);
+  
+  var username = localStorage.getItem('applyname');
+  var useremail = localStorage.getItem('applyemail');
+  var usernumber = localStorage.getItem('applynumber');
+
+  document.getElementById('showuser').innerHTML = username;
+  document.getElementById('showemail').innerHTML = useremail;
+  document.getElementById('shownumber').innerHTML = usernumber;
+  if( applyname.lenth > 6 && applyemail.lenth > 6 && applynumber.lenth > 6 ){
+    submitbox.style.display = "block";
+  }
+  else{alert('fill you form coreclty')}
+}
+function goodbye() {
+  submitbox.style.display = "none";
+}
+    </script>
   </body>
 </html>

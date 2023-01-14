@@ -131,24 +131,26 @@ border-bottom: 1px solid black;
     padding: 5px;
  }
  .apply-now{
-    justify-content: center;
-    text-align: center;
-    height: 70px;
-    border-bottom: 1px solid rgb(185, 183, 183);
+    justify-content: center !important;
+    text-align: center !important;
+    height: 70px !important;
+    border-bottom: 1px solid rgb(185, 183, 183) !important;
  }
  .apply-now a{
-  text-decoration: none;
+  text-decoration: none !important;
  }
  .apply-now a button{
-  background-color: red;
-  color: white;
-  width: 150px;
-  height: 40px;
- border-radius: 5px;
- border-color: red;
- font-family: poppins;
- font-weight: 500;
+  background-color: red !important;
+  color: white !important;
+  width: 150px !important;
+  height: 40px !important;
+ border-radius: 5px !important;
+ border-color: red !important;
+ font-family: poppins !important;
+ font-weight: 500 !important;
  }
+
+
  .apply-now a button:hover{
   transition: 0.3s ease-in;
   color: black;
@@ -270,4 +272,51 @@ font-size: 15px !important;
   color: rgb(102, 102, 218);
   cursor: pointer;
   margin-top: 35px;
+}
+
+.applynow{
+  text-decoration: none;
+}
+
+
+/* The Modal (background) */
+.submitbox {
+  display: none; /* Hidden by default */
+  border-radius: 5px !important;
+  position: fixed !important; /* Stay in place */
+  z-index: 1 !important; /* Sit on top */
+  padding-top: 100px !important; /* Location of the box */
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important; /* Full width */
+  height: 100% !important; /* Full height */
+  overflow: auto !important; /* Enable scroll if needed */
+  background-color: rgb(0,0,0) !important; /* Fallback color */
+  background-color: rgba(0,0,0,0.4) !important; /* Black w/ opacity */
+}
+
+/* Modal Content */
+.submitbox-content {
+  border-radius: 5px !important;
+  background-color: #fefefe !important;
+  margin: auto !important;
+  padding: 20px !important;
+  border: 1px solid #888 !important;
+  width: 40% !important;
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
